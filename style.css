@@ -22,14 +22,12 @@ p#body_content{
     color: hsl(215, 51%, 70%);;
 }
 #wrapper{
-    padding: 6rem;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50rem;
+    height: 95vh;
 }
-section {
+.card{
     border: 5px solid none;
     width: 25rem;
     height: auto;
@@ -37,7 +35,7 @@ section {
     border-radius: 1rem;
     padding: 1.5rem;
 }
-section article{
+.card .main-card{
     display: flex;
 }
 .container{
