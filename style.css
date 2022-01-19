@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+h2 {
+    color: hsl(0, 0%, 100%);
+}
+h2:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+p#body_content{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);;
+}
+#wrapper{
+    padding: 6rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+}
+section {
+    border: 5px solid none;
+    width: 25rem;
+    height: auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+section article{
+    display: flex;
+}
+.container{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+    background-color:hsl(178deg 100% 50% / 52%);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.container:hover .overlay{
+    opacity: 1;
+}
+.icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+#main-equilibrium {
+    margin: 0 auto;
+    width: 350px;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+#content {
+    flex-flow: column;
+}
+#price_time_data{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid hsl(215, 32%, 27%);
+}
+.parent_pt_data{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    flex-basis: 32%;
+}
+.parent_pt_data img {
+    height: 1.2rem;
+    width: 1rem;
+    position: relative;
+    top: 1.27rem;
+}
+#price_time_data p#price{
+    color:hsl(178, 100%, 50%);
+    padding-top: 0.2rem;
+}
+#price_time_data p#time{
+    color:hsl(215, 51%, 70%);
+    padding-top: 0.2rem;
+}
+#usr_info{
+    display: flex;
+    position: relative;
+    top: 0.85rem;
+}
+#usr_info img{
+    height: 2.24rem;
+}
+#usr_info p{
+    padding-left: 1.5rem;
+    margin-top: 12px;
+    color: hsl(215, 51%, 70%);
+}
+#usr_info p a{
+    color: white;
+}
+#usr_info p a:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.attribution {
+    text-align: center;
+    color:white;
+}
+@media screen and (max-width:375px){
+    #main-equilibrium {
+        width: 284px;
+    }
+}
